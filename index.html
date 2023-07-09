@@ -43,7 +43,7 @@
 				</section>
 			</div>
 			<div class="main-right">
-				<section class="section summary" id="summary">
+				<section class="section" id="summary">
 					<h2 class="section-title">SUMMARY</h2>
 					<p>I'm just starting my way into programming and don't have any commercial experience yet. But I'm highly
 						motivated and put a lot of time and efforts into self-education. This process excites me and I often lose
@@ -64,6 +64,27 @@
 				</section>
 				<section class="section" id="code">
 					<h2 class="section-title">CODE EXAMPLE</h2>
+					<div class="code-example">
+						<p>An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function
+							that determines whether a string that contains only letters is an isogram. Assume the empty string is an
+							isogram. Ignore letter case.</p>
+<pre>
+	<code>
+		function isIsogram(str){
+			let upperStr = str.toUpperCase();
+			for (let i = 0; i &#8249; upperStr.length; i++) {
+				let char = upperStr[i];
+				let pos = i + 1;
+				if (upperStr.includes(char, pos)) {
+					return false;
+				}
+				continue;
+			}
+			return true;
+		}
+	</code>
+</pre>
+					</div>
 				</section>
 			</div>
 		</main>
