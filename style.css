@@ -35,6 +35,7 @@ img{vertical-align: top;}
 
 html {
   scroll-behavior: smooth; 
+	color: rgb(53, 53, 53);
 }
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -59,8 +60,14 @@ body {
 }
 .nav-link {
 	padding: 0 20px;
-	line-height: 50px;
+	line-height: 60px;
 	transition: .3s;
+	color: rgb(71, 71, 71);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.nav-link:hover {
+	color: rgb(247, 247, 247);
 }
 
 /* Main */
@@ -72,30 +79,35 @@ body {
 	justify-content: space-between;
 }
 .main a {
-	color: black;
+	color: rgb(53, 53, 53);
 }
 .main-left,.main-right {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: space-between;
 	align-content: center;
 	padding: 30px;
 }
 .main-right {
 	flex-grow: 1;
 	background-color:rgb(230,232,210);
+	justify-content: space-between;
 }
 .main-left {
 	min-width: 30%;
 	background-color: rgb(167,190,174);
+	justify-content: flex-start;
 }
 
 /* Sections */
+.main-left .section {
+	padding: 45px 0;
+}
 .section-title {
 	padding: 20px;
 	font-weight: 500;
-	border-bottom: 2px solid black;padding-bottom: 5px;
+	border-bottom: 2px solid rgb(53, 53, 53);
+	padding-bottom: 5px;
 	margin-bottom: 20px;
 }
 .section p {
@@ -105,6 +117,9 @@ body {
 h1.section-title {
 	font-size: 170%;
 }
+.position {
+	font-weight: 500;
+}
 
 /* Profile with avatar */
 .profile {
@@ -113,13 +128,14 @@ h1.section-title {
 	justify-content: space-around;
 	align-items:center;
 }
+
 .profile-picture {
 	width: 230px;
 	height: 230px;
 	border-radius: 50%;
 	object-fit:cover;
 	overflow: hidden;
-	margin-top: 40px;
+	margin-bottom: 20px;
 }
 .avatar {
 	width: 100%;
@@ -128,8 +144,9 @@ h1.section-title {
 /* Lists stilization */
 .language-item, .skills-item, .education-item {
 	background: url(assets/icons/star_empty.png) no-repeat left 2px;
-	padding: 5px 5px 5px 30px;
+	padding: 0 5px 0 30px;
 	transition: .3s ease-in-out;
+	line-height: 35px;
 }
 .language-item:hover, .skills-item:hover, .education-item:hover {
 	background: url(assets/icons/star_full.png) no-repeat left 2px;
