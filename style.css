@@ -37,6 +37,33 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+html {
+  scroll-behavior: smooth; 
+}
 body {
 	font-family: 'Open Sans', sans-serif;
+}
+.container {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 1440px;
+	min-height: 100vh;
+	margin: 0 auto;
+	border: 1px red solid;
+}
+.header, .main, .footer {
+	border: 1px green solid;
+}
+
+/* Navigation panel */
+.nav-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.nav-link {
+	padding: 0 20px;
+	line-height: 50px;
+	transition: .3s;
 }
