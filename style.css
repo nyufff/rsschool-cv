@@ -12,14 +12,11 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 
-nav,footer,header,aside{display: block;}
-
 html,body{
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
+	font-size: 16px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -34,7 +31,6 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 html {
@@ -87,6 +83,23 @@ body {
 }
 .main-right {
 	flex-grow: 1;
+}
+.main-left {
+	min-width: 30%;
+}
+
+/* Sections */
+.section-title {
+	padding: 20px;
+	font-weight: 500;
+	border-bottom: 2px solid black;padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+
+/* Summary */
+.summary {
+	text-align: justify;
+	text-indent: 15px;
 }
 
 /* Footer */
