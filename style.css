@@ -71,6 +71,9 @@ body {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 }
+.main a {
+	color: black;
+}
 .main-left,.main-right {
 	display: flex;
 	flex-direction: column;
@@ -102,6 +105,8 @@ body {
 h1.section-title {
 	font-size: 170%;
 }
+
+/* Profile with avatar */
 .profile {
 	display: flex;
 	flex-direction: column;
@@ -118,6 +123,38 @@ h1.section-title {
 }
 .avatar {
 	width: 100%;
+}
+
+/* Lists stilization */
+.language-item, .skills-item, .education-item {
+	background: url(assets/icons/star_empty.png) no-repeat left 2px;
+	padding: 5px 5px 5px 30px;
+	transition: .3s ease-in-out;
+}
+.language-item:hover, .skills-item:hover, .education-item:hover {
+	background: url(assets/icons/star_full.png) no-repeat left 2px;
+}
+
+/* Contacts list stilization */
+.contacts-item {
+	padding: 5px 5px 5px 35px;
+}
+.contacts-item:hover, .telegram a:hover {
+	color: rgb(226, 225, 225);
+	transition: .3s ease-in-out;
+}
+.location {
+	background: url(assets/icons/location_full.png) no-repeat left 3px;
+}
+.phone {
+	background: url(assets/icons/phone_full.png) no-repeat left 3px;
+}
+.email {
+	background: url(assets/icons/email_full.png) no-repeat left 3px;
+}
+.telegram {
+	background: url(assets/icons/telegram_full.png) no-repeat left 3px;
+	color: black;
 }
 
 /* Footer */
