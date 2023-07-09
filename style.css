@@ -46,10 +46,9 @@ body {
 	max-width: 1440px;
 	min-height: 100vh;
 	margin: 0 auto;
-	border: 1px red solid;
 }
-.header, .main, .footer {
-	border: 1px green solid;
+.header,.footer {
+	background-color: rgb(143, 169, 151);
 }
 
 /* Navigation panel */
@@ -79,13 +78,14 @@ body {
 	justify-content: space-between;
 	align-content: center;
 	padding: 30px;
-	border: 1px orange solid;
 }
 .main-right {
 	flex-grow: 1;
+	background-color:rgb(230,232,210);
 }
 .main-left {
 	min-width: 30%;
+	background-color: rgb(167,190,174);
 }
 
 /* Sections */
@@ -98,6 +98,26 @@ body {
 .section p {
 	text-align: justify;
 	text-indent: 15px;
+}
+h1.section-title {
+	font-size: 170%;
+}
+.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items:center;
+}
+.profile-picture {
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	object-fit:cover;
+	overflow: hidden;
+	margin-top: 40px;
+}
+.avatar {
+	width: 100%;
 }
 
 /* Footer */
