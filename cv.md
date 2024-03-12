@@ -12,6 +12,13 @@
 ***
 ### SUMMARY
 ***
+I'm just starting my way into programming and don't have any commercial experience yet. But I'm highly motivated and put a lot of time and efforts into self-education. This process excites me and I often lose track of the time. I'm always enthusiastically looking for solutions on the Internet, while trying to understand them and rewrite myself, instead of blindly copying.
+
+I'm an active and curious listener, adore people who can teach me something new. I quickly adapt to new conditions. In my previous position, I had to change cities and departments several times, and therefore I successfully worked for different teams.
+
+I'm an open-minded, non-conflict person and always try to treat people with respect. That helped me to build strong relationships with my colleagues and customers. Also, I'm able to self-motivate myself and reach my goals patiently and persistently. It applies to all areas of my life, be it a hobby, study, or work.
+
+My goal is to gain enough knowledge to work on real projects as a part of a team and to get an experienced mentor who will help me boost my personal development in the right direction.
 
 ***
 ### SKILLS AND PROFICIENCY
