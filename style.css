@@ -81,3 +81,34 @@ body {
 	background-color: rgb(167,190,174);
 	justify-content: flex-start;
 }
+
+/* Footer */
+.share-list {
+	display: flex;
+	justify-content:space-between;
+	padding:0 60px;
+}
+.share-link {
+	padding: 0 40px;
+	line-height: 60px;
+	color: rgb(71, 71, 71);
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: .3s;
+}
+.share-link:hover {
+	color: rgb(247, 247, 247);
+}
+.github {
+	background: url(assets/icons/github_empty.png) left center no-repeat;
+}
+.github:hover {
+	background: url(assets/icons/github_full.png) left center no-repeat;
+}
+.rsschool {
+	align-self: end;
+	background: url(assets/icons/rsschool_light.svg) center center/80px no-repeat;
+}
+.rsschool:hover {
+	background: url(assets/icons/rsschool_dark.svg) center center/80px no-repeat;
+}
