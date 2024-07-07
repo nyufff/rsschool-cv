@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>CV</title>
-</head>
-<body>
-	
-</body>
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="style.css">
+			<title>CV</title>
+			<link rel="icon" href="assets/icons/icons8-estrella-color-16.ico">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+			<script src="main.js" defer></script>
+		</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="sum nav-link">Summary</li>
+						<li class="skill nav-link">Skills and proficiency</li>
+						<li class="code nav-link">Code example</li>
+						<li class="edu nav-link">Education</li>
+						<li class="lang nav-link">Languages</li>
+					</ul>
+				</nav>
+			</header>
+			<main class="main">
+				<div class="main-left">
+					<div class="main-left">
+						<section class="section profile">
+							<div class="profile-picture">
+								<img class="avatar" src="assets/images/avatar.jpg" alt="my photo">
+							</div>
+							<h1 class="section-title">HANNA ASTAKHOVA</h1>
+							<h4 class="position">JUNIOR FRONTEND DEVELOPER</h4>
+						</section>
+						<section class="section">
+							<h2 class="section-title">CONTACTS</h2>
+							<ul class="contacts-list">
+								<li class="contacts-item location">Quart de Poblet, Spain</li>
+								<li class="contacts-item phone">+34 000 00 00 00</li>
+								<li class="contacts-item telegram">
+									<a href="https://t.me/free_ish">Hanna Astakhova</a>
+								</li>
+								<li class="contacts-item email">freeish90@gmail.com</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+				<div class="main-right">
+					<section class="section summary active">
+						<h2 class="section-title">SUMMARY</h2>
+						<p>I'm just starting my way into programming and don't have any commercial experience yet. But I'm highly
+							motivated and put a lot of time and efforts into self-education. This process excites me and I often lose
+							track of the time. I'm always enthusiastically looking for solutions on the Internet, while trying to
+							understand them and rewrite myself, instead of blindly copying.</p>
+						<p>I'm an active and curious listener, adore people who can teach me something new. I quickly adapt to new
+							conditions. In my previous position, I had to change cities and departments several times, and therefore I
+							successfully worked for different teams.</p>
+						<p>I'm an open-minded, non-conflict person and always try to treat people with respect. That helped me to
+							build strong relationships with my colleagues and customers. Also, I'm able to self-motivate myself and
+							reach my goals patiently and persistently. It applies to all areas of my life, be it a hobby, study, or
+							work.</p>
+						<p>My goal is to gain enough knowledge to work on real projects as a part of a team and to get an experienced
+							mentor who will help me boost my personal development in the right direction</p>
+					</section>
+					<section class="section skills">
+						<h2 class="section-title">SKILLS AND PROFICIENCY</h2>
+						<ul class="skills-list">
+							<li class="skills-item">HTML5</li>
+							<li class="skills-item">CSS3, SCSS</li>
+							<li class="skills-item">JavaScript</li>
+							<li class="skills-item">Git, GitHub</li>
+							<li class="skills-item">Figma</li>
+							<li class="skills-item">Visual Studio Code</li>
+						</ul>
+					</section>
+					<section class="section code">
+						<h2 class="section-title">CODE EXAMPLE</h2>
+						<div class="code-example">
+							<p>An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function
+								that determines whether a string that contains only letters is an isogram. Assume the empty string is an
+								isogram. Ignore letter case.</p>
+							<pre>
+		<code>
+			function isIsogram(str){
+				let upperStr = str.toUpperCase();
+				for (let i = 0; i &#8249; upperStr.length; i++) {
+					let char = upperStr[i];
+					let pos = i + 1;
+					if (upperStr.includes(char, pos)) {
+						return false;
+					}
+					continue;
+				}
+				return true;
+			}
+		</code>
+	</pre>
+						</div>
+					</section>
+					<section class="section education">
+						<h2 class="section-title">EDUCATION</h2>
+						<ul class="education-list">
+							<li class="education-item">
+								RS School "JavaScript/Frontend Pre-School 2023Q2"
+							</li>
+							<li class="education-item">
+								<a href="https://javascript.info/">The modern JavaScript tutorial (in progress)</a>
+							</li>
+							<li class="education-item">
+								W3Schools HTML, CSS and JavaScript tutorials
+							</li>
+							<li class="education-item">
+								EPAM “Frontend/JavaScript Development” course
+							</li>
+							<li class="education-item">
+								2007-2012 Donetsk National University of Economics and Trade.<br>Master's Degree at Commodity Science and
+								Expert Examination in Customs
+							</li>
+						</ul>
+					</section>
+					<section class="section languages">
+						<h2 class="section-title">LANGUAGES</h2>
+						<ul class="language-list">
+							<li class="language-item">Ukrainian - Native</li>
+							<li class="language-item">Russian - Native</li>
+							<li class="language-item">English - Advanced</li>
+							<li class="language-item">Spanish - Elementary</li>
+						</ul>
+					</section>
+				</div>
+			</main>
+			<footer class="footer">
+				<ul class="share-list">
+					<li class="share-item github"><a href="https://github.com/nyufff" class="share-link"></a></li>
+					<li class="share-item copyright"><a href="#" class="share-link">&copy; 2024 <span class="hide">Hanna
+								Astakhova</span></a></li>
+					<li class="share-item rsschool"><a href="https://rs.school/" class="share-link"></a></li>
+				</ul>
+			</footer>
+		</div>
+	</body>
 </html>
