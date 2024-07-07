@@ -42,7 +42,7 @@ body {
 	margin: 0 auto;
 }
 .header,.footer {
-	background-color: rgb(106, 150, 119);
+	background-color: rgba(116, 158, 151, 0.575);
 	width: 100%;
 }
 
@@ -70,7 +70,6 @@ body {
 	flex-grow: 1;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-between;
 }
 .main a {
 	color: rgb(53, 53, 53);
@@ -80,20 +79,23 @@ body {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-content: center;
-	padding: 30px;
 }
 .main-right {
-	background-color:rgb(232, 235, 206);
+	background-color: rgb(192, 214, 199);
+	padding: 100px 50px;
+	line-height: 30px;
+	flex-grow: 1;
 }
 .main-left {
 	min-width: 30%;
 	background-color: rgb(180, 202, 187);
 	gap: 150px;
+	padding: 50px 30px;
 }
 
 /* Sections */
-.main-left .section {
-	padding-top: 50px;
+.main-right .section {
+	display: none;
 }
 .section-title {
 	padding: 20px;
@@ -136,6 +138,15 @@ h1.section-title {
 /* Lists stilization */
 .nav-list, .education-list, .contacts-list, .language-list, .skills-list {
 	cursor: pointer;
+}
+.language-item, .skills-item, .education-item {
+	background: url(assets/icons/star_empty.png) no-repeat left 2px;
+	padding: 0 5px 0 30px;
+	transition: .3s ease-in-out;
+	line-height: 35px;
+}
+.language-item:hover, .skills-item:hover, .education-item:hover {
+	background: url(assets/icons/star_full.png) no-repeat left 2px;
 }
 
 /* Contacts list stilization */
@@ -189,4 +200,9 @@ h1.section-title {
 }
 .rsschool:hover {
 	background: url(assets/icons/rsschool_dark.svg) center center/80px no-repeat;
+}
+
+/* Page changing */
+.section.active {
+	display: block;
 }
