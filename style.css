@@ -206,3 +206,54 @@ h1.section-title {
 .section.active {
 	display: block;
 }
+
+/* Media queries */
+@media (max-width: 1410px) {
+  h1.section-title, .position {
+		text-align: center;
+	}
+}
+@media (max-width: 1120px) {
+	pre {
+		margin-left: -130px;
+	}
+}
+@media (max-width: 972px) {
+	.header,
+	.footer {
+		font-size: 80%;
+	}
+	.main {
+		flex-wrap: wrap;
+	}
+	.main-left {
+		min-width: 100%;
+		gap: 0;
+		padding: 15px 0;
+	}
+	.main-left .section {
+		padding: 15px 30px;
+	}
+	.main-right {
+		padding: 30px;
+	}
+	.profile-picture {
+		width: 150px;
+		height: 150px;
+	}
+	.section-title {
+		font-size: 110%;
+	}
+	h1.section-title {
+		font-size: 120%;
+	}
+	.nav-link {
+		padding: 5px;
+		line-height: 40px;
+	}
+}
+@media (max-width: 650px) {
+	.hide {
+		display: none;
+	}
+}
