@@ -1,0 +1,65 @@
+/*Clear*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	font-size: 16px;
+	background-color: rgb(167,190,174);
+}
+input,button,textarea{font-family:inherit;}
+button{cursor: pointer;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+/*--------------------*/
+
+html {
+  scroll-behavior: smooth; 
+	color: rgb(53, 53, 53);
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+.container {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 1440px;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+.header,.footer {
+	background-color: rgb(143, 169, 151);
+	width: 100%;
+}
+
+/* Main */
+.main {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.main-right {
+	background-color:rgb(230,232,210);
+	justify-content: space-between;
+}
+.main-left {
+	min-width: 30%;
+	background-color: rgb(167,190,174);
+	justify-content: flex-start;
+}
